@@ -1,0 +1,326 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+}
+
+.wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* ==================HEADER================================= */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7em calc(3.46em + 10.4vw);
+    background-color:  #4c97a3;
+}
+
+.logo {
+    margin: 0;
+    font-family: 'Cherry Swash', cursive;
+    font-size: calc(13px + 2.1vw);
+    color: white;
+}
+
+.menu__list {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    color: #DCE3E4;
+}
+
+.menu__item {
+    position: relative;
+}
+
+.menu__link {
+    margin: 0 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #DCE3E4; 
+    cursor: pointer;
+}
+
+.link--home:after {
+    position: absolute;
+    content: '';
+    right: 1px;
+    width: 2px;
+    height: 16px;
+    background-color: #dce3e4;
+    transform: rotate(15deg);
+}
+
+.link--about:after {
+    position: absolute;
+    content: '';
+    right: 0px;
+    width: 2px;
+    height: 16px;
+    background-color: #dce3e4;
+    transform: rotate(15deg);
+}
+
+.link--portfolio:after {
+    position: absolute;
+    content: '';
+    right: 0px;
+    width: 2px;
+    height: 16px;
+    background-color: #dce3e4;
+    transform: rotate(15deg);
+}
+
+.gamburger_menu {
+    position: relative;
+    display: none;
+    width: 2.5em;
+    height: 0.3em;
+    background: #fff;
+}
+
+.gamburger_menu::after {
+    content: '';
+    position: absolute;
+    top: 0.55em;
+    left:0;
+    right: 0;
+    width: 2.5em;
+    height: 0.3em;
+    background: #fff;
+}
+
+.gamburger_menu::before {
+    content: '';
+    position: absolute;
+    top: -0.50em;
+    left:0;
+    right: 0;
+    width: 2.5em;
+    height: 0.3em;
+    background: #fff;
+}
+
+
+/* =====================SEA============================== */
+
+.sea {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: url(../img/sea.jpeg) no-repeat center/ cover;
+}
+
+.sea_title {
+    margin-top: calc(129px + 0.7vw);
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: calc(1em + 2.43vw);
+    text-transform: uppercase;
+    color: #E4E4E4
+}
+
+.sea__button {
+    width: 234px;
+    margin-top: 46px;
+    margin-bottom: 120px;
+    padding: 12px 40px;
+    font-size: 30px;
+    font-weight: 300;
+    color: #E4E4E4;
+    background: transparent;
+    border: 2px solid #e4e4e4;
+    border-radius: 5%;
+    outline: none;
+    cursor: pointer;
+}
+
+.point__list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.point__item {
+    margin: 5px;
+    color: #e4e4e4;
+}
+
+/* =======================ICONS=============================== */
+
+.icons {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons_title {
+    width: 49.15%;
+    margin-top: 8%;
+    text-align: center;
+    font-weight: 300;
+    font-size: calc(12px + 1.4vw);
+    color: #4C505D;
+}
+
+.icons_text {
+    width: 66.6%;
+    margin: 0;
+    text-align: center;
+    font-size: calc(9px + 0.4vw);
+    color: #4C505D;
+}
+
+.icons-img {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.img {
+    margin: 0 15px;
+}
+
+.img__bascet {
+    width: calc(37px + 1.5vw);
+    height: calc(31px + 1.5vw);
+    background: url(../img/bascet.png)no-repeat center/ cover;
+}
+
+.img__earth {
+    width: calc(36px + 1.5vw);
+    height: calc(36px + 1.5vw);
+    background: url(../img/earth.png)no-repeat center/ cover;
+}
+
+.img__portfolio {
+    width: calc(33px + 1.5vw);
+    height: calc(31px + 1.5vw);
+    background: url(../img/briefcase.png)no-repeat center/ cover;
+}
+
+/* =======================QUOTE================================== */
+.quote {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #00d089;
+}
+
+.quote_avatar {
+    display: flex;
+    margin-top: 7.57%;
+}
+
+.avatar__img {
+    width: calc(109px + 2vw);
+    height: calc(109px + 2vw);
+    margin-right: 38px;
+    background: url(../img/avatar.jpeg)no-repeat center/ cover;
+    border-radius: 50%;
+}
+
+.avatar_name {
+    margin: 0;
+    font-size: calc(20px + 0.5vw);
+    font-weight: bold;
+    color: #e4e4e4;
+}
+
+.avatar__quotes {
+    width: calc(95px + 2.5vw);
+    height: calc(65px + 2.5vw);
+    color: white;
+    background: url(../img/quotes.png) no-repeat center/ cover;
+    opacity: 0.2;
+}
+
+.quote_text {
+    width: 70.4%;
+    margin-top: 4.83%;
+    margin-bottom: 7.2%;
+    font-size: calc(12px + 0.5vw);
+    color: #fff;
+    font-weight: 300;
+}
+
+/* =========================FORM============================== */
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/map.jpeg) no-repeat center/ cover;
+}
+
+.form_circle {
+    position: relative;
+    width: 26.9375em;
+    height: 26.9375em;
+    margin: calc(10px + 1.6276vw) auto;
+    opacity: 0.85;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.form__contact {
+    position: absolute;
+    top: 7em;
+    left: 5em;
+    width: 17.25em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.form__line {
+    width: 17.25em;
+    height: 2em;
+    margin: 7px;
+    font-size: 14px;
+    opacity: 0.5;
+    color: #4C505D;
+    border: #4C505D 0.5;
+}
+
+.line__msg {
+    height: 81px;
+    padding-top: 0;
+}
+
+.form__button {
+    position: absolute;
+    top: 24em;
+    left: 14em;
+    width: 67px;
+    height: 68px;
+    background: url(../img/ok.png) no-repeat center transparent;
+    border: none;
+    cursor: pointer;
+}
+/* ==================FOOTER========================== */
+
+footer {
+    background-color: #00d089;
+}
+
+.copy {
+    margin: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}

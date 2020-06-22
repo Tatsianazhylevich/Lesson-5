@@ -1,0 +1,32 @@
+@media (max-width: 768px) {
+    .menu__list {
+        display: none;
+    }
+
+    .gamburger_menu {
+        display: flex;
+    }
+}
+
+@media (max-width: 375px) {
+    .form_circle {
+        width: 115vw;
+        height: 100vw;
+        margin: 0;
+    }
+
+    .form__contact {
+        position: absolute;
+        top: 5em;
+        left: 6em;
+        width: 48.4vw;
+    }
+
+    .form__button {
+        position: absolute;
+        top: 78vw;
+        left: 40vw;
+        width: 67px;
+        height: 68px;
+    }
+}
