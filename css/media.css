@@ -18,14 +18,14 @@
     .form__contact {
         position: absolute;
         top: 5em;
-        left: 6em;
+        left: 5em;
         width: 48.4vw;
     }
 
     .form__button {
         position: absolute;
         top: 78vw;
-        left: 40vw;
+        left: 39vw;
         width: 67px;
         height: 68px;
     }
