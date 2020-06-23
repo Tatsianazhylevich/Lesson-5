@@ -5,6 +5,7 @@
 
     .gamburger_menu {
         display: flex;
+        cursor: pointer;
     }
 }
 
