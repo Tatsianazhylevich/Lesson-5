@@ -15,10 +15,12 @@ body {
 /* ==================HEADER================================= */
 
 header {
+    position: sticky;
+    z-index: 5;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.7em calc(3.46em + 10.4vw);
+    padding: 0.7em calc(10px + 10vw);
     background-color:  #4c97a3;
 }
 
@@ -26,6 +28,7 @@ header {
     margin: 0;
     font-family: 'Cherry Swash', cursive;
     font-size: calc(13px + 2.1vw);
+    text-decoration: none;
     color: white;
 }
 
@@ -45,6 +48,7 @@ header {
 
 .menu__link {
     margin: 0 10px;
+    font-size: calc(10px + 0.4vw);
     text-transform: uppercase;
     text-decoration: none;
     color: #DCE3E4; 
@@ -56,7 +60,7 @@ header {
     content: '';
     right: 1px;
     width: 2px;
-    height: 16px;
+    height: 17px;
     background-color: #dce3e4;
     transform: rotate(15deg);
 }
@@ -92,7 +96,7 @@ header {
 .gamburger_menu::after {
     content: '';
     position: absolute;
-    top: 0.55em;
+    top: 0.50em;
     left:0;
     right: 0;
     width: 2.5em;
@@ -114,6 +118,12 @@ header {
 
 /* =====================SEA============================== */
 
+.container {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+}
+
 .sea {
     display: flex;
     align-items: center;
@@ -122,7 +132,7 @@ header {
 }
 
 .sea_title {
-    margin-top: calc(129px + 0.7vw);
+    margin-top: calc(110px + 0.7vw);
     margin-bottom: 0;
     text-align: center;
     font-weight: bold;
@@ -132,28 +142,48 @@ header {
 }
 
 .sea__button {
-    width: 234px;
-    margin-top: 46px;
-    margin-bottom: 120px;
-    padding: 12px 40px;
-    font-size: 30px;
+    margin: 1.5em 0 4em;
+    padding: 0.5em 2em;
+    font-size: calc(10px + 1.5vw);
     font-weight: 300;
     color: #E4E4E4;
     background: transparent;
     border: 2px solid #e4e4e4;
     border-radius: 5%;
-    outline: none;
+    cursor: pointer;
+}
+
+.sea__button:hover {
+    margin: 1.5em 0 4em;
+    padding: 0.5em 2em;
+    font-size: calc(10px + 1.5vw);
+    font-weight: 300;
+    color: #E4E4E4;
+    background: rgba(30, 131, 122, 0.363);
+    border: 2px solid #e4e4e4;
+    border-radius: 5%;
     cursor: pointer;
 }
 
 .point__list {
     display: flex;
     justify-content: space-around;
+    width: 15%;
+    margin: 0 auto 15px;
+    padding: 0;
+    list-style-type: none;
 }
 
 .point__item {
-    margin: 5px;
-    color: #e4e4e4;
+    width: 10px;
+    height: 10px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.point__item:nth-child(3) {
+    background-color: grey;
 }
 
 /* =======================ICONS=============================== */
@@ -162,34 +192,33 @@ header {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-top: 8%;
 }
 
 .icons_title {
-    width: 49.15%;
-    margin-top: 8%;
+    padding: 0 4em;
     text-align: center;
     font-weight: 300;
-    font-size: calc(12px + 1.4vw);
+    font-size: calc(13px + 1.3vw);
     color: #4C505D;
 }
 
 .icons_text {
-    width: 66.6%;
     margin: 0;
     text-align: center;
-    font-size: calc(9px + 0.4vw);
+    font-size: calc(11px + 0.5vw);
     color: #4C505D;
 }
 
 .icons-img {
     display: flex;
-    justify-content: space-between;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
 
 .img {
-    margin: 0 15px;
+    margin: 0 4vw;
 }
 
 .img__bascet {
@@ -220,6 +249,7 @@ header {
 
 .quote_avatar {
     display: flex;
+    justify-content: center;
     margin-top: 7.57%;
 }
 
@@ -247,9 +277,9 @@ header {
 }
 
 .quote_text {
-    width: 70.4%;
-    margin-top: 4.83%;
-    margin-bottom: 7.2%;
+    margin-top: 3em;
+    margin-bottom: 4em;
+    text-align: left;
     font-size: calc(12px + 0.5vw);
     color: #fff;
     font-weight: 300;
@@ -293,6 +323,7 @@ header {
     font-size: 14px;
     opacity: 0.5;
     color: #4C505D;
+    border: #4C505D 0.5;
 }
 
 .line__msg {
