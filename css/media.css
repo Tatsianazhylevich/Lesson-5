@@ -5,7 +5,6 @@
 
     .gamburger_menu {
         display: flex;
-        cursor: pointer;
     }
 }
 
@@ -19,14 +18,14 @@
     .form__contact {
         position: absolute;
         top: 5em;
-        left: 4em;
+        left: 6em;
         width: 48.4vw;
     }
 
     .form__button {
         position: absolute;
         top: 78vw;
-        left: 37vw;
+        left: 40vw;
         width: 67px;
         height: 68px;
     }
